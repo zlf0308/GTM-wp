@@ -1,0 +1,1015 @@
+{
+    "exportFormatVersion": 2,
+    "exportTime": "2022-10-21 08:17:26",
+    "containerVersion": {
+        "path": "accounts/6060511706/containers/95551218/versions/0",
+        "accountId": "6060511706",
+        "containerId": "95551218",
+        "containerVersionId": "0",
+        "container": {
+            "path": "accounts/6060511706/containers/95551218",
+            "accountId": "6060511706",
+            "containerId": "95551218",
+            "name": "garyzlf.wp.com",
+            "publicId": "GTM-K6DBKZM",
+            "usageContext": [
+                "WEB"
+            ],
+            "fingerprint": "1666335836218",
+            "tagManagerUrl": "https://tagmanager.google.com/#/container/accounts/6060511706/containers/95551218/workspaces?apiLink=container",
+            "features": {
+                "supportUserPermissions": true,
+                "supportEnvironments": true,
+                "supportWorkspaces": true,
+                "supportGtagConfigs": false,
+                "supportBuiltInVariables": true,
+                "supportClients": false,
+                "supportFolders": true,
+                "supportTags": true,
+                "supportTemplates": true,
+                "supportTriggers": true,
+                "supportVariables": true,
+                "supportVersions": true,
+                "supportZones": true
+            },
+            "tagIds": [
+                "GTM-K6DBKZM"
+            ]
+        },
+        "tag": [
+            {
+                "accountId": "6060511706",
+                "containerId": "95551218",
+                "tagId": "12",
+                "name": "GA4",
+                "type": "gaawc",
+                "parameter": [
+                    {
+                        "type": "BOOLEAN",
+                        "key": "sendPageView",
+                        "value": "true"
+                    },
+                    {
+                        "type": "BOOLEAN",
+                        "key": "enableSendToServerContainer",
+                        "value": "false"
+                    },
+                    {
+                        "type": "TEMPLATE",
+                        "key": "measurementId",
+                        "value": "{{GA4-v}}"
+                    }
+                ],
+                "fingerprint": "1666335856319",
+                "firingTriggerId": [
+                    "2147479553"
+                ],
+                "parentFolderId": "3",
+                "tagFiringOption": "ONCE_PER_EVENT",
+                "monitoringMetadata": {
+                    "type": "MAP"
+                },
+                "consentSettings": {
+                    "consentStatus": "NOT_SET"
+                }
+            },
+            {
+                "accountId": "6060511706",
+                "containerId": "95551218",
+                "tagId": "17",
+                "name": "GA4 - Event - Ecommerce events",
+                "type": "gaawe",
+                "parameter": [
+                    {
+                        "type": "TEMPLATE",
+                        "key": "eventName",
+                        "value": "{{Event}}"
+                    },
+                    {
+                        "type": "LIST",
+                        "key": "eventParameters",
+                        "list": [
+                            {
+                                "type": "MAP",
+                                "map": [
+                                    {
+                                        "type": "TEMPLATE",
+                                        "key": "name",
+                                        "value": "items"
+                                    },
+                                    {
+                                        "type": "TEMPLATE",
+                                        "key": "value",
+                                        "value": "{{Ecommerce Items}}"
+                                    }
+                                ]
+                            },
+                            {
+                                "type": "MAP",
+                                "map": [
+                                    {
+                                        "type": "TEMPLATE",
+                                        "key": "name",
+                                        "value": "transaction_id"
+                                    },
+                                    {
+                                        "type": "TEMPLATE",
+                                        "key": "value",
+                                        "value": "{{Ecommerce Transaction ID}}"
+                                    }
+                                ]
+                            },
+                            {
+                                "type": "MAP",
+                                "map": [
+                                    {
+                                        "type": "TEMPLATE",
+                                        "key": "name",
+                                        "value": "affiliation"
+                                    },
+                                    {
+                                        "type": "TEMPLATE",
+                                        "key": "value",
+                                        "value": "{{Ecommerce Affiliation}}"
+                                    }
+                                ]
+                            },
+                            {
+                                "type": "MAP",
+                                "map": [
+                                    {
+                                        "type": "TEMPLATE",
+                                        "key": "name",
+                                        "value": "value"
+                                    },
+                                    {
+                                        "type": "TEMPLATE",
+                                        "key": "value",
+                                        "value": "{{Ecommerce Value}}"
+                                    }
+                                ]
+                            },
+                            {
+                                "type": "MAP",
+                                "map": [
+                                    {
+                                        "type": "TEMPLATE",
+                                        "key": "name",
+                                        "value": "tax"
+                                    },
+                                    {
+                                        "type": "TEMPLATE",
+                                        "key": "value",
+                                        "value": "{{Ecommerce Tax}}"
+                                    }
+                                ]
+                            },
+                            {
+                                "type": "MAP",
+                                "map": [
+                                    {
+                                        "type": "TEMPLATE",
+                                        "key": "name",
+                                        "value": "shipping"
+                                    },
+                                    {
+                                        "type": "TEMPLATE",
+                                        "key": "value",
+                                        "value": "{{Ecommerce Shipping}}"
+                                    }
+                                ]
+                            },
+                            {
+                                "type": "MAP",
+                                "map": [
+                                    {
+                                        "type": "TEMPLATE",
+                                        "key": "name",
+                                        "value": "currency"
+                                    },
+                                    {
+                                        "type": "TEMPLATE",
+                                        "key": "value",
+                                        "value": "{{Ecommerce Currency}}"
+                                    }
+                                ]
+                            },
+                            {
+                                "type": "MAP",
+                                "map": [
+                                    {
+                                        "type": "TEMPLATE",
+                                        "key": "name",
+                                        "value": "coupon"
+                                    },
+                                    {
+                                        "type": "TEMPLATE",
+                                        "key": "value",
+                                        "value": "{{Ecommerce Coupon}}"
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "type": "TAG_REFERENCE",
+                        "key": "measurementId",
+                        "value": "GA4"
+                    }
+                ],
+                "fingerprint": "1666335856320",
+                "firingTriggerId": [
+                    "15"
+                ],
+                "parentFolderId": "3",
+                "tagFiringOption": "ONCE_PER_EVENT",
+                "monitoringMetadata": {
+                    "type": "MAP"
+                },
+                "consentSettings": {
+                    "consentStatus": "NOT_SET"
+                }
+            },
+            {
+                "accountId": "6060511706",
+                "containerId": "95551218",
+                "tagId": "20",
+                "name": "Conversion Linker",
+                "type": "gclidw",
+                "parameter": [
+                    {
+                        "type": "BOOLEAN",
+                        "key": "enableCrossDomain",
+                        "value": "false"
+                    },
+                    {
+                        "type": "BOOLEAN",
+                        "key": "enableUrlPassthrough",
+                        "value": "false"
+                    },
+                    {
+                        "type": "BOOLEAN",
+                        "key": "enableCookieOverrides",
+                        "value": "false"
+                    }
+                ],
+                "fingerprint": "1666339653091",
+                "firingTriggerId": [
+                    "2147479553"
+                ],
+                "tagFiringOption": "ONCE_PER_EVENT",
+                "monitoringMetadata": {
+                    "type": "MAP"
+                },
+                "consentSettings": {
+                    "consentStatus": "NOT_SET"
+                }
+            },
+            {
+                "accountId": "6060511706",
+                "containerId": "95551218",
+                "tagId": "23",
+                "name": "Ads-Purchase",
+                "type": "awct",
+                "parameter": [
+                    {
+                        "type": "BOOLEAN",
+                        "key": "enableNewCustomerReporting",
+                        "value": "false"
+                    },
+                    {
+                        "type": "BOOLEAN",
+                        "key": "enableConversionLinker",
+                        "value": "true"
+                    },
+                    {
+                        "type": "TEMPLATE",
+                        "key": "orderId",
+                        "value": "{{Ecommerce Transaction ID}}"
+                    },
+                    {
+                        "type": "BOOLEAN",
+                        "key": "enableProductReporting",
+                        "value": "false"
+                    },
+                    {
+                        "type": "TEMPLATE",
+                        "key": "conversionValue",
+                        "value": "{{Ecommerce Value}}"
+                    },
+                    {
+                        "type": "BOOLEAN",
+                        "key": "enableEnhancedConversion",
+                        "value": "false"
+                    },
+                    {
+                        "type": "TEMPLATE",
+                        "key": "conversionCookiePrefix",
+                        "value": "_gcl"
+                    },
+                    {
+                        "type": "BOOLEAN",
+                        "key": "enableShippingData",
+                        "value": "false"
+                    },
+                    {
+                        "type": "TEMPLATE",
+                        "key": "conversionId",
+                        "value": "{{Ads-Conversion ID}}"
+                    },
+                    {
+                        "type": "TEMPLATE",
+                        "key": "currencyCode",
+                        "value": "{{Ecommerce Currency}}"
+                    },
+                    {
+                        "type": "TEMPLATE",
+                        "key": "conversionLabel",
+                        "value": "{{Ads Purchase Label}}"
+                    },
+                    {
+                        "type": "BOOLEAN",
+                        "key": "rdp",
+                        "value": "false"
+                    }
+                ],
+                "fingerprint": "1666339990629",
+                "firingTriggerId": [
+                    "18"
+                ],
+                "tagFiringOption": "ONCE_PER_EVENT",
+                "monitoringMetadata": {
+                    "type": "MAP"
+                },
+                "consentSettings": {
+                    "consentStatus": "NOT_SET"
+                }
+            },
+            {
+                "accountId": "6060511706",
+                "containerId": "95551218",
+                "tagId": "25",
+                "name": "Ads-Add to cart",
+                "type": "awct",
+                "parameter": [
+                    {
+                        "type": "BOOLEAN",
+                        "key": "enableNewCustomerReporting",
+                        "value": "false"
+                    },
+                    {
+                        "type": "BOOLEAN",
+                        "key": "enableConversionLinker",
+                        "value": "true"
+                    },
+                    {
+                        "type": "BOOLEAN",
+                        "key": "enableProductReporting",
+                        "value": "false"
+                    },
+                    {
+                        "type": "TEMPLATE",
+                        "key": "conversionValue",
+                        "value": "{{Ecommerce Value}}"
+                    },
+                    {
+                        "type": "BOOLEAN",
+                        "key": "enableEnhancedConversion",
+                        "value": "false"
+                    },
+                    {
+                        "type": "TEMPLATE",
+                        "key": "conversionCookiePrefix",
+                        "value": "_gcl"
+                    },
+                    {
+                        "type": "BOOLEAN",
+                        "key": "enableShippingData",
+                        "value": "false"
+                    },
+                    {
+                        "type": "TEMPLATE",
+                        "key": "conversionId",
+                        "value": "{{Ads-Conversion ID}}"
+                    },
+                    {
+                        "type": "TEMPLATE",
+                        "key": "currencyCode",
+                        "value": "{{Ecommerce Currency}}"
+                    },
+                    {
+                        "type": "TEMPLATE",
+                        "key": "conversionLabel",
+                        "value": "{{Ads Add To Cart Label}}"
+                    },
+                    {
+                        "type": "BOOLEAN",
+                        "key": "rdp",
+                        "value": "false"
+                    }
+                ],
+                "fingerprint": "1666340106492",
+                "firingTriggerId": [
+                    "7"
+                ],
+                "tagFiringOption": "ONCE_PER_EVENT",
+                "monitoringMetadata": {
+                    "type": "MAP"
+                },
+                "consentSettings": {
+                    "consentStatus": "NOT_SET"
+                }
+            },
+            {
+                "accountId": "6060511706",
+                "containerId": "95551218",
+                "tagId": "27",
+                "name": "Ads-Begin_checkout",
+                "type": "awct",
+                "parameter": [
+                    {
+                        "type": "BOOLEAN",
+                        "key": "enableNewCustomerReporting",
+                        "value": "false"
+                    },
+                    {
+                        "type": "BOOLEAN",
+                        "key": "enableConversionLinker",
+                        "value": "true"
+                    },
+                    {
+                        "type": "BOOLEAN",
+                        "key": "enableProductReporting",
+                        "value": "false"
+                    },
+                    {
+                        "type": "TEMPLATE",
+                        "key": "conversionValue",
+                        "value": "{{Ecommerce Value}}"
+                    },
+                    {
+                        "type": "BOOLEAN",
+                        "key": "enableEnhancedConversion",
+                        "value": "false"
+                    },
+                    {
+                        "type": "TEMPLATE",
+                        "key": "conversionCookiePrefix",
+                        "value": "_gcl"
+                    },
+                    {
+                        "type": "BOOLEAN",
+                        "key": "enableShippingData",
+                        "value": "false"
+                    },
+                    {
+                        "type": "TEMPLATE",
+                        "key": "conversionId",
+                        "value": "{{Ads-Conversion ID}}"
+                    },
+                    {
+                        "type": "TEMPLATE",
+                        "key": "currencyCode",
+                        "value": "{{Ecommerce Currency}}"
+                    },
+                    {
+                        "type": "TEMPLATE",
+                        "key": "conversionLabel",
+                        "value": "{{Ads Begin checkout Label}}"
+                    },
+                    {
+                        "type": "BOOLEAN",
+                        "key": "rdp",
+                        "value": "false"
+                    }
+                ],
+                "fingerprint": "1666340210308",
+                "firingTriggerId": [
+                    "19"
+                ],
+                "tagFiringOption": "ONCE_PER_EVENT",
+                "monitoringMetadata": {
+                    "type": "MAP"
+                },
+                "consentSettings": {
+                    "consentStatus": "NOT_SET"
+                }
+            },
+            {
+                "accountId": "6060511706",
+                "containerId": "95551218",
+                "tagId": "28",
+                "name": "Google Ads Remarketing",
+                "type": "sp",
+                "parameter": [
+                    {
+                        "type": "BOOLEAN",
+                        "key": "enableConversionLinker",
+                        "value": "true"
+                    },
+                    {
+                        "type": "BOOLEAN",
+                        "key": "enableDynamicRemarketing",
+                        "value": "false"
+                    },
+                    {
+                        "type": "TEMPLATE",
+                        "key": "conversionCookiePrefix",
+                        "value": "_gcl"
+                    },
+                    {
+                        "type": "TEMPLATE",
+                        "key": "conversionId",
+                        "value": "{{Ads-Conversion ID}}"
+                    },
+                    {
+                        "type": "TEMPLATE",
+                        "key": "customParamsFormat",
+                        "value": "NONE"
+                    },
+                    {
+                        "type": "BOOLEAN",
+                        "key": "rdp",
+                        "value": "false"
+                    }
+                ],
+                "fingerprint": "1666340224777",
+                "firingTriggerId": [
+                    "2147479553"
+                ],
+                "tagFiringOption": "ONCE_PER_EVENT",
+                "monitoringMetadata": {
+                    "type": "MAP"
+                },
+                "consentSettings": {
+                    "consentStatus": "NOT_SET"
+                }
+            }
+        ],
+        "trigger": [
+            {
+                "accountId": "6060511706",
+                "containerId": "95551218",
+                "triggerId": "7",
+                "name": "add_to_cart",
+                "type": "CUSTOM_EVENT",
+                "customEventFilter": [
+                    {
+                        "type": "MATCH_REGEX",
+                        "parameter": [
+                            {
+                                "type": "TEMPLATE",
+                                "key": "arg0",
+                                "value": "{{_event}}"
+                            },
+                            {
+                                "type": "TEMPLATE",
+                                "key": "arg1",
+                                "value": "add_to_cart"
+                            }
+                        ]
+                    }
+                ],
+                "fingerprint": "1666335856317",
+                "parentFolderId": "3"
+            },
+            {
+                "accountId": "6060511706",
+                "containerId": "95551218",
+                "triggerId": "15",
+                "name": "Event - Ecommerce Events GA4",
+                "type": "CUSTOM_EVENT",
+                "customEventFilter": [
+                    {
+                        "type": "MATCH_REGEX",
+                        "parameter": [
+                            {
+                                "type": "TEMPLATE",
+                                "key": "arg0",
+                                "value": "{{_event}}"
+                            },
+                            {
+                                "type": "TEMPLATE",
+                                "key": "arg1",
+                                "value": "view_item|view_item_list|select_item|add_to_cart|remove_from_cart|view_cart|begin_checkout|add_payment_info|add_shipping_info|purchase"
+                            }
+                        ]
+                    }
+                ],
+                "fingerprint": "1666335856320",
+                "parentFolderId": "3"
+            },
+            {
+                "accountId": "6060511706",
+                "containerId": "95551218",
+                "triggerId": "18",
+                "name": "purchase",
+                "type": "CUSTOM_EVENT",
+                "customEventFilter": [
+                    {
+                        "type": "MATCH_REGEX",
+                        "parameter": [
+                            {
+                                "type": "TEMPLATE",
+                                "key": "arg0",
+                                "value": "{{_event}}"
+                            },
+                            {
+                                "type": "TEMPLATE",
+                                "key": "arg1",
+                                "value": "purchase"
+                            }
+                        ]
+                    }
+                ],
+                "fingerprint": "1666335856321",
+                "parentFolderId": "3"
+            },
+            {
+                "accountId": "6060511706",
+                "containerId": "95551218",
+                "triggerId": "19",
+                "name": "begin_checkout",
+                "type": "CUSTOM_EVENT",
+                "customEventFilter": [
+                    {
+                        "type": "EQUALS",
+                        "parameter": [
+                            {
+                                "type": "TEMPLATE",
+                                "key": "arg0",
+                                "value": "{{_event}}"
+                            },
+                            {
+                                "type": "TEMPLATE",
+                                "key": "arg1",
+                                "value": "begin_checkout"
+                            }
+                        ]
+                    }
+                ],
+                "fingerprint": "1666335856321",
+                "parentFolderId": "3"
+            }
+        ],
+        "variable": [
+            {
+                "accountId": "6060511706",
+                "containerId": "95551218",
+                "variableId": "4",
+                "name": "Ecommerce Coupon",
+                "type": "v",
+                "parameter": [
+                    {
+                        "type": "INTEGER",
+                        "key": "dataLayerVersion",
+                        "value": "2"
+                    },
+                    {
+                        "type": "BOOLEAN",
+                        "key": "setDefaultValue",
+                        "value": "false"
+                    },
+                    {
+                        "type": "TEMPLATE",
+                        "key": "name",
+                        "value": "ecommerce.coupon"
+                    }
+                ],
+                "fingerprint": "1666335856316",
+                "parentFolderId": "3",
+                "formatValue": {}
+            },
+            {
+                "accountId": "6060511706",
+                "containerId": "95551218",
+                "variableId": "5",
+                "name": "Ecommerce",
+                "type": "v",
+                "parameter": [
+                    {
+                        "type": "INTEGER",
+                        "key": "dataLayerVersion",
+                        "value": "1"
+                    },
+                    {
+                        "type": "BOOLEAN",
+                        "key": "setDefaultValue",
+                        "value": "false"
+                    },
+                    {
+                        "type": "TEMPLATE",
+                        "key": "name",
+                        "value": "ecommerce"
+                    }
+                ],
+                "fingerprint": "1666335856317",
+                "parentFolderId": "3",
+                "formatValue": {}
+            },
+            {
+                "accountId": "6060511706",
+                "containerId": "95551218",
+                "variableId": "6",
+                "name": "Ecommerce Items",
+                "type": "jsm",
+                "parameter": [
+                    {
+                        "type": "TEMPLATE",
+                        "key": "javascript",
+                        "value": "function() {\n  var ecom = {{Ecommerce}};\n  if ( ecom && ecom.items ) {\n    return ecom.items;\n  } else {\n    return undefined;\n  }\n}"
+                    }
+                ],
+                "fingerprint": "1666335856322",
+                "parentFolderId": "3",
+                "formatValue": {}
+            },
+            {
+                "accountId": "6060511706",
+                "containerId": "95551218",
+                "variableId": "8",
+                "name": "Ecommerce Transaction ID",
+                "type": "v",
+                "parameter": [
+                    {
+                        "type": "INTEGER",
+                        "key": "dataLayerVersion",
+                        "value": "2"
+                    },
+                    {
+                        "type": "BOOLEAN",
+                        "key": "setDefaultValue",
+                        "value": "false"
+                    },
+                    {
+                        "type": "TEMPLATE",
+                        "key": "name",
+                        "value": "ecommerce.transaction_id"
+                    }
+                ],
+                "fingerprint": "1666335856318",
+                "parentFolderId": "3",
+                "formatValue": {}
+            },
+            {
+                "accountId": "6060511706",
+                "containerId": "95551218",
+                "variableId": "9",
+                "name": "Ecommerce Value",
+                "type": "v",
+                "parameter": [
+                    {
+                        "type": "INTEGER",
+                        "key": "dataLayerVersion",
+                        "value": "2"
+                    },
+                    {
+                        "type": "BOOLEAN",
+                        "key": "setDefaultValue",
+                        "value": "false"
+                    },
+                    {
+                        "type": "TEMPLATE",
+                        "key": "name",
+                        "value": "ecommerce.value"
+                    }
+                ],
+                "fingerprint": "1666335856318",
+                "parentFolderId": "3",
+                "formatValue": {}
+            },
+            {
+                "accountId": "6060511706",
+                "containerId": "95551218",
+                "variableId": "10",
+                "name": "Ecommerce Tax",
+                "type": "v",
+                "parameter": [
+                    {
+                        "type": "INTEGER",
+                        "key": "dataLayerVersion",
+                        "value": "2"
+                    },
+                    {
+                        "type": "BOOLEAN",
+                        "key": "setDefaultValue",
+                        "value": "false"
+                    },
+                    {
+                        "type": "TEMPLATE",
+                        "key": "name",
+                        "value": "ecommerce.tax"
+                    }
+                ],
+                "fingerprint": "1666335856318",
+                "parentFolderId": "3",
+                "formatValue": {}
+            },
+            {
+                "accountId": "6060511706",
+                "containerId": "95551218",
+                "variableId": "11",
+                "name": "GA4-v",
+                "type": "c",
+                "parameter": [
+                    {
+                        "type": "TEMPLATE",
+                        "key": "value",
+                        "value": "G-test"
+                    }
+                ],
+                "fingerprint": "1666335856318",
+                "parentFolderId": "3",
+                "formatValue": {}
+            },
+            {
+                "accountId": "6060511706",
+                "containerId": "95551218",
+                "variableId": "13",
+                "name": "Ecommerce Shipping",
+                "type": "v",
+                "parameter": [
+                    {
+                        "type": "INTEGER",
+                        "key": "dataLayerVersion",
+                        "value": "2"
+                    },
+                    {
+                        "type": "BOOLEAN",
+                        "key": "setDefaultValue",
+                        "value": "false"
+                    },
+                    {
+                        "type": "TEMPLATE",
+                        "key": "name",
+                        "value": "ecommerce.shipping"
+                    }
+                ],
+                "fingerprint": "1666335856319",
+                "parentFolderId": "3",
+                "formatValue": {}
+            },
+            {
+                "accountId": "6060511706",
+                "containerId": "95551218",
+                "variableId": "14",
+                "name": "Ecommerce Affiliation",
+                "type": "v",
+                "parameter": [
+                    {
+                        "type": "INTEGER",
+                        "key": "dataLayerVersion",
+                        "value": "2"
+                    },
+                    {
+                        "type": "BOOLEAN",
+                        "key": "setDefaultValue",
+                        "value": "false"
+                    },
+                    {
+                        "type": "TEMPLATE",
+                        "key": "name",
+                        "value": "ecommerce.affiliation"
+                    }
+                ],
+                "fingerprint": "1666335856319",
+                "parentFolderId": "3",
+                "formatValue": {}
+            },
+            {
+                "accountId": "6060511706",
+                "containerId": "95551218",
+                "variableId": "16",
+                "name": "Ecommerce Currency",
+                "type": "v",
+                "parameter": [
+                    {
+                        "type": "INTEGER",
+                        "key": "dataLayerVersion",
+                        "value": "2"
+                    },
+                    {
+                        "type": "BOOLEAN",
+                        "key": "setDefaultValue",
+                        "value": "false"
+                    },
+                    {
+                        "type": "TEMPLATE",
+                        "key": "name",
+                        "value": "ecommerce.currency"
+                    }
+                ],
+                "fingerprint": "1666335856320",
+                "parentFolderId": "3",
+                "formatValue": {}
+            },
+            {
+                "accountId": "6060511706",
+                "containerId": "95551218",
+                "variableId": "21",
+                "name": "Ads-Conversion ID",
+                "type": "c",
+                "parameter": [
+                    {
+                        "type": "TEMPLATE",
+                        "key": "value",
+                        "value": "Conversion ID"
+                    }
+                ],
+                "fingerprint": "1666339907379",
+                "formatValue": {}
+            },
+            {
+                "accountId": "6060511706",
+                "containerId": "95551218",
+                "variableId": "22",
+                "name": "Ads Purchase Label",
+                "type": "c",
+                "parameter": [
+                    {
+                        "type": "TEMPLATE",
+                        "key": "value",
+                        "value": "purchase label"
+                    }
+                ],
+                "fingerprint": "1666339954878",
+                "formatValue": {}
+            },
+            {
+                "accountId": "6060511706",
+                "containerId": "95551218",
+                "variableId": "24",
+                "name": "Ads Add To Cart Label",
+                "type": "c",
+                "parameter": [
+                    {
+                        "type": "TEMPLATE",
+                        "key": "value",
+                        "value": "add to cart label"
+                    }
+                ],
+                "fingerprint": "1666340073639",
+                "formatValue": {}
+            },
+            {
+                "accountId": "6060511706",
+                "containerId": "95551218",
+                "variableId": "26",
+                "name": "Ads Begin checkout Label",
+                "type": "c",
+                "parameter": [
+                    {
+                        "type": "TEMPLATE",
+                        "key": "value",
+                        "value": "label"
+                    }
+                ],
+                "fingerprint": "1666340161768",
+                "formatValue": {}
+            }
+        ],
+        "folder": [
+            {
+                "accountId": "6060511706",
+                "containerId": "95551218",
+                "folderId": "3",
+                "name": "WP",
+                "fingerprint": "1666335856316"
+            }
+        ],
+        "builtInVariable": [
+            {
+                "accountId": "6060511706",
+                "containerId": "95551218",
+                "type": "PAGE_URL",
+                "name": "Page URL"
+            },
+            {
+                "accountId": "6060511706",
+                "containerId": "95551218",
+                "type": "PAGE_HOSTNAME",
+                "name": "Page Hostname"
+            },
+            {
+                "accountId": "6060511706",
+                "containerId": "95551218",
+                "type": "PAGE_PATH",
+                "name": "Page Path"
+            },
+            {
+                "accountId": "6060511706",
+                "containerId": "95551218",
+                "type": "REFERRER",
+                "name": "Referrer"
+            },
+            {
+                "accountId": "6060511706",
+                "containerId": "95551218",
+                "type": "EVENT",
+                "name": "Event"
+            }
+        ],
+        "fingerprint": "1666340246662",
+        "tagManagerUrl": "https://tagmanager.google.com/#/versions/accounts/6060511706/containers/95551218/versions/0?apiLink=version"
+    }
+}
